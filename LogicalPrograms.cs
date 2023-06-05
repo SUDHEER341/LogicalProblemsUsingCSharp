@@ -10,7 +10,7 @@ namespace LogicalProblems
     {
         static void Main(string[] args)
         {
-            LogicalProblems.Programs.Reverse_Number();
+            LogicalProblems.Programs.Prime_Number();
            
         }
             

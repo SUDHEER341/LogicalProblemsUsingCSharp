@@ -9,21 +9,33 @@
     {
         internal class Programs
         {
-            public static void Reverse_Number()
+        public static void Prime_Number()
+        {
+            Console.WriteLine("Enter the number to check whether it is prime or not");
+            int number = Convert.ToInt32(Console.ReadLine());
+            int count = 0;
+            for (int i = 2; i < number; i++)
             {
-                Console.WriteLine("Enter the number");
-                int number = Convert.ToInt32(Console.ReadLine());
-                int numberCopy = number;
-                int reverse = 0;
-                while (number > 0)
+                if (number % i == 0)
                 {
-                    int remainder = number % 10;
-                    reverse = (reverse * 10) + remainder;
-                    number = number / 10;
+                    count++;
                 }
-                Console.WriteLine("Reverse number of {0} is {1}", numberCopy, reverse);
+                if (count > 0)
+                {
+                    break;
+                }
             }
 
-            
+            if (count > 0)
+            {
+                Console.WriteLine("{0} is not a prime number  ", number);
+            }
+            else
+            {
+                Console.WriteLine("{0} is a prime number ", number);
+            }
         }
+
+
+    }
     }
