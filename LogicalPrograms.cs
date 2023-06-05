@@ -10,10 +10,14 @@ namespace LogicalProblems
     {
         static void Main(string[] args)
         {
+            LogicalProblems.Programs.Reverse_Number();
             LogicalProblems.Programs.Prime_Number();
-           
+            LogicalProblems.Programs.Perfect_Number();
+            LogicalProblems.Programs.Fibanocci_Series();
+            LogicalProblems.Programs.StopWatch();
+
         }
-            
-        
+
+
     }
 }
